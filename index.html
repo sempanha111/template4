@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoinApex: The crypto trading platform trusted by millions</title>
+  <link rel="icon" href="./assets/images/favicon.ico" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/jquery-3.7.1.min.js"></script>
+  <script src="assets/tailwind.js"></script>
+  <link rel="stylesheet" href="./assets/index.css" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1211799346681320');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1211799346681320&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+  <div id="showloading" class=" h-screen w-full left-0 bg-[#adadadbe] top-0 fixed duration-1000 z-50">
+    <div class=' space-x-2 justify-center flex items-center mt-[20%]'>
+      <div class='h-8  w-8 bg-black rounded-full animate-bounce [animation-delay:0s]'></div>
+      <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+      <div class='h-8 w-8 bg-black rounded-full animate-bounce'></div>
+    </div>
+  </div>
+
+  <header class=" bg-white relative ">
+    <div class="container mx-auto max-w-screen-xl  " id="header">
+      <div class=" flex items-center justify-between">
+        <div class="py-5">
+          <a href="./index.html">
+            <h1 class="text-5xl font-semibold text-black">Coin<span class="text-blue-600">Apex</span> </h1>
+          </a>
+        </div>
+
+        <div class="py-5 hidden md:flex items-center gap-5">
+
+          <div>
+            <a href="#" class="text-2xl font-medium hover:text-gray-700">Home </a>
+          </div>
+          <div>
+            <a href="#" class="text-2xl font-medium hover:text-gray-700"> About </a>
+          </div>
+          <div>
+            <a href="#" class="text-2xl font-medium hover:text-gray-700"> Plans </a>
+          </div>
+          <div>
+            <a href="#" class="text-2xl font-medium hover:text-gray-700"> Blog </a>
+          </div>
+          <div>
+            <a href="#" class="text-2xl font-medium hover:text-gray-700"> Contact </a>
+          </div>
+
+
+            <button
+              onclick="url()" class="py-3 px-8 border-orange-600 border text-black rounded-md text-2xl font-semibold hover:bg-orange-700 hover:text-white transition">
+              Login</button>
+
+
+            <button
+              onclick="url()" class="py-3 px-8 bg-orange-600 text-white rounded-md text-2xl font-semibold hover:bg-orange-700 transition">
+              Register</button>
+
+
+        </div>
+
+
+        <label class="burger  md:hidden" id="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+
+
+
+      <div class="hidden" id="mobile">
+
+        <div class="py-5 flex flex-col gap-10">
+          <a href="" class="text-2xl font-medium hover:text-gray-700">Home</a>
+          <a href="" class="text-2xl font-medium hover:text-gray-700">About</a>
+          <a href="" class="text-2xl font-medium hover:text-gray-700">Plans</a>
+          <a href="" class="text-2xl font-medium hover:text-gray-700">Blog</a>
+          <a href="" class="text-2xl font-medium hover:text-gray-700">Contact
+          </a>
+          <div>
+            
+              <button
+                onclick="url()" class="py-3 px-8 border-orange-600 border text-black rounded-md text-2xl font-semibold hover:bg-orange-700 hover:text-white transition">
+                Login</button>
+
+            
+              <button
+                onclick="url()" class="py-3 px-8 bg-orange-600 text-white rounded-md text-2xl font-semibold hover:bg-orange-700 transition">
+                Register</button>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+  </header>
+
+
+
+
+  <main class=" custom">
+    <div class="bg-[url('./assets/images/61e25a1ad9afb1642224154.jpg')] bg-center bg-no-repeat bg-cover">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="flex ">
+          <div class="py-32 md:py-[25rem] *:mb-10 md:pr-[30rem] xl:pr-[50rem] ">
+            <div class="text-white text-6xl font-semibold ">Start Bitcoin Mining And Get 200$ Today!</div>
+            <p class="mt-10 text-white">It’s super simple and Convenient - Your mining rigs are already set up and
+              running. As soon as you’ve set up your account, you can start mining your first coins using our cloud
+              mining service!</p>
+            
+              <button onclick="url()" class="py-5 px-8 bg-yellow-600  text-white rounded-md text-xl font-medium  hover:bg-white hover:text-black transition">  Start Mining</button>
+      
+              <button onclick="url()"
+                class="py-5 px-8 bg-white mx-5 text-black rounded-md text-xl font-medium  hover:bg-yellow-600 hover:text-white transition">
+                Contact Us</button>
+  
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-20 bg-[url('./assets/images/61ac7ae0252401638693600.jpg')]  bg-no-repeat bg-contain bg-center">
+      <div class="container mx-auto max-w-screen-xl ">
+        <div class="*:mb-3 text-center ">
+          <h2>Ready to start mining?</h2>
+          <p>This Is how Vethmine works</p>
+          <hr class="w-[6rem] border-t-[3px] border-yellow-500 mx-auto ">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-7">
+            <div class="">
+              <div class="h-[10rem] grid  items-center ">
+                <div
+                  class="bg-[#0e1744] w-[9rem] h-[9rem] mx-auto rounded-full transition-all duration-500 flex items-center justify-center text-white hover:-mt-10 cursor-pointer">
+                  <i class="ri-user-line text-6xl"></i>
+                </div>
+              </div>
+              <h4 class="mx-auto mt-3 font-semibold items-center">Create An Account</h4>
+            </div>
+            <div class="">
+              <div class="h-[10rem] grid  items-center ">
+                <div
+                  class="bg-[#0e1744] w-[9rem] h-[9rem] mx-auto rounded-full transition-all duration-500 flex items-center justify-center text-white hover:-mt-10 cursor-pointer">
+                  <i class="ri-hand-coin-line text-6xl"></i>
+                </div>
+              </div>
+              <h4 class="mx-auto mt-3 font-semibold items-center">Choose Plans</h4>
+            </div>
+            <div class="">
+              <div class="h-[10rem] grid  items-center ">
+                <div
+                  class="bg-[#0e1744] w-[9rem] h-[9rem] mx-auto rounded-full transition-all duration-500 flex items-center justify-center text-white hover:-mt-10 cursor-pointer">
+                  <i class="ri-rocket-2-line text-6xl"></i>
+                </div>
+              </div>
+              <h4 class="mx-auto mt-3 font-semibold items-center">Start Mining</h4>
+            </div>
+            <div class="">
+              <div class="h-[10rem] grid  items-center ">
+                <div
+                  class="bg-[#0e1744] w-[9rem] h-[9rem] mx-auto rounded-full transition-all duration-500 flex items-center justify-center text-white hover:-mt-10 cursor-pointer">
+                  <i class="ri-money-dollar-circle-line text-6xl"></i>
+                </div>
+              </div>
+              <h4 class="mx-auto mt-3 font-semibold items-center">Get Mining Output</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <img class="max-w-[80%]" src="./assets/images/61e2601222ca21642225682.png" alt="">
+          <div class="*:mb-4">
+            <h2>Know About Us</h2>
+            <p>Why Vethmine is the best choice for crypto mining as compared to others</p>
+            <hr class="w-[6rem] border-t-[3px] border-yellow-500  ">
+            <ul class="ul2 text-2xl *:mb-3">
+              <li>Vethmine Is one of the most successful crypto mining companies in the world;</li>
+              <li>Over 139 employees working 24/7 for your benefit;</li>
+              <li>Over 5 office structures registered under the law provisions;</li>
+              <li>We have the best security feature, your data and Information Is 100% Safe with us.</li>
+              <li>Ultimate performance at super affordable price.</li>
+              <li>Servicing over 40,000 customers from 120+ countries.</li>
+              <li>Our system is Integrated with 5 minable coins.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-[#0E1744]">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="*:mb-4 text-center text-white">
+          <h2>Subscribe Our Newsletter</h2>
+          <p>Be the first to get Information about our product and services.</p>
+          <hr class="w-[6rem] border-t-[3px] border-yellow-500 mx-auto ">
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="py-32 bg-[url('./assets/images/61ac7ecc098681638694604.png')] bg-no-repeat bg-bottom bg-opacity-10 bg-contain">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="text-center *:mb-3">
+          <h2 class="">Why Choose VethMine?</h2>
+          <div class="text-xl text-gray-700 font-medium">We offer exclusive mining packages offering daily payouts with
+            principal returned.</div>
+          <hr class="w-[6rem] border-t-[4px] border-yellow-500 mx-auto ">
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5">
+            <div class="bg-[#0E1744] p-10 *:my-4 rounded-lg border-b-4 border-b-yellow-500">
+              <div
+                class="bg-yellow-500 w-[7rem] h-[7rem] mx-auto rounded-full flex items-center justify-center text-white">
+                <i class="ri-wallet-line text-5xl"></i>
+              </div>
+              <h4 class="text-white font-semibold pt-4">Daily Mining Output</h4>
+              <p class="text-center text-white">Once your mining contract Is activated, your daily earnings are
+                distributed to your preferred mining account after 24hours.</p>
+            </div>
+            <div class="bg-[#0E1744] p-10 *:my-4 rounded-lg border-b-4 border-b-yellow-500 h-fit">
+              <div
+                class="bg-yellow-500 w-[7rem] h-[7rem] mx-auto rounded-full flex items-center justify-center text-white">
+                <i class="ri-hammer-fill rotate-45 text-5xl"></i>
+              </div>
+              <h4 class="text-white font-semibold pt-4">Leading Revenue</h4>
+              <p class="text-center text-white">PPS+, PPLNS and SOLO are supported Lowest orphan rate in the network</p>
+            </div>
+            <div class="bg-[#0E1744] p-10 *:my-4 rounded-lg border-b-4 border-b-yellow-500 h-fit">
+              <div
+                class="bg-yellow-500 w-[7rem] h-[7rem] mx-auto rounded-full flex items-center justify-center text-white">
+                <i class="ri-lock-line text-5xl"></i>
+              </div>
+              <h4 class="text-white font-semibold pt-4">Security and Stability</h4>
+              <p class="text-center text-white">High-standard, multi-level risk control system Nodes deployed all over
+                the world with low latency 24/7 secure and stable mining network available</p>
+            </div>
+
+            <div class="bg-[#0E1744] p-10 *:my-4 rounded-lg border-b-4 border-b-yellow-500">
+              <div
+                class="bg-yellow-500 w-[7rem] h-[7rem] mx-auto rounded-full flex items-center justify-center text-white">
+                <i class="ri-currency-fill text-5xl"></i>
+              </div>
+              <h4 class="text-white font-semibold pt-4">Easy Payment System</h4>
+              <p class="text-center text-white">We have and accepts the most widely used payment system therefore making
+                it easy for you to get started.</p>
+            </div>
+            <div class="bg-[#0E1744] p-10 *:my-4 rounded-lg border-b-4 border-b-yellow-500 h-fit">
+              <div
+                class="bg-yellow-500 w-[7rem] h-[7rem] mx-auto rounded-full flex items-center justify-center text-white">
+                <i class="ri-time-line text-5xl"></i>
+              </div>
+              <h4 class="text-white font-semibold pt-4">Brand Strength</h4>
+              <p class="text-center text-white">The world's top all-inclusive mining pool Global services in 110+
+                countries/regions Covering over 38,000 users worldwide Multi-million dollar worth of cumulative mining
+                output value</p>
+            </div>
+            <div class="bg-[#0E1744] p-10 *:my-4 rounded-lg border-b-4 border-b-yellow-500 h-fit">
+              <div
+                class="bg-yellow-500 w-[7rem] h-[7rem] mx-auto rounded-full flex items-center justify-center text-white">
+                <i class="ri-money-dollar-circle-line text-5xl"></i>
+              </div>
+              <h4 class="text-white font-semibold pt-4">Quick Withdrawal</h4>
+              <p class="text-center text-white">Request for a payout and receive your earnings on personal wallet any
+                time, any day. No hassle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="*:mb-3">
+          <h2 class="text-center">Check Our Services</h2>
+          <div class="text-xl text-center text-gray-700 font-medium">Its super easy and convenient to get started</div>
+          <hr class="w-[6rem] border-t-[4px] border-yellow-500 mx-auto ">
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-5 pt-5 *:h-fit">
+            <div
+              class="border border-yellow-500 rounded-md p-8 *:mb-3 bg-[url('./assets/images/')] hover:bg-[#0F1845] hover:text-white transition-all duration-500 hover:border-[#0F1845] cursor-pointer">
+              <i class="ri-wheelchair-line text-yellow-500 text-7xl "></i>
+              <h4 class="font-semibold">Instant Connect</h4>
+              <div class="text-xl">Your selected mining contract Is activated automatically once your payment Is
+                confirmed</div>
+
+            </div>
+            <div
+              class="border border-yellow-500 rounded-md p-8 *:mb-3 bg-[url('./assets/images/')] hover:bg-[#0F1845] hover:text-white transition-all duration-500 hover:border-[#0F1845] cursor-pointer">
+              <i class="ri-wheelchair-line text-yellow-500 text-7xl "></i>
+              <h4 class="font-semibold">Easy Withdrawal</h4>
+              <div class="text-xl">Request for a payout and receive your earnings on personal wallet any time, any day.
+                No hassle</div>
+
+            </div>
+            <div
+              class="border border-yellow-500 rounded-md p-8 *:mb-3 bg-[url('./assets/images/')] hover:bg-[#0F1845] hover:text-white transition-all duration-500 hover:border-[#0F1845] cursor-pointer">
+              <i class="ri-wheelchair-line text-yellow-500 text-7xl "></i>
+              <h4 class="font-semibold">Detailed Statistics</h4>
+              <div class="text-xl">Get a detailed mining tracks/history on your dashboard on how your mining contract Is
+                running.</div>
+
+            </div>
+            <div
+              class="border border-yellow-500 rounded-md p-8 *:mb-3 bg-[url('./assets/images/')] hover:bg-[#0F1845] hover:text-white transition-all duration-500 hover:border-[#0F1845] cursor-pointer">
+              <i class="ri-wheelchair-line text-yellow-500 text-7xl "></i>
+              <h4 class="font-semibold">Data Protection</h4>
+              <div class="text-xl">Maximum security and data protection Is in our DNA, it's our first priority to ensure
+                that your Information and data is fully encrypted with a 6 Layer security protocols.</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section
+      class="py-10 bg-[url('./assets/images/61ac7ecc098681638694604.png')] bg-no-repeat bg-center bg-cover bg-opacity-5">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class=" *:mb-3">
+          <h2 class="">What People Says About Us</h2>
+          <div class="text-xl font-medium">We're trusted by 40,000+ people around the world</div>
+          <hr class="w-[6rem] border-t-[4px] border-yellow-500  pb-10">
+
+          <!-- Slider main container -->
+          <div class="swiper" id="swiper1">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="bg-[#0E1744] text-white rounded-lg *:my-3 py-8">
+                  <p class=" px-8"> The profits I get while mining with Vethmine Is massive, can't even be compared
+                    while trading cryptocurrency. I LOVE THIS COMPANY</p>
+                  <div class="relative py-6">
+                    <hr class="border-t-[0.2px] border-gray-500">
+                    <img class="rounded-full max-w-[6rem] border-[#1b2555] border-4 absolute -top-4 right-0 mr-5"
+                      src="./assets/images/621434e63c1c31645491430.jpg" alt="">
+                  </div>
+
+                  <h4 class="font-semibold px-8">Michelle</h4>
+                  <div class="font-medium text-xl px-8">Verified User</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-[#E9A21C] text-white rounded-lg *:my-3 py-8">
+                  <p class=" px-8"> My experience with Vethmine was good and am so much impressed with their mining service, They're the best among all.</p>
+                  <div class="relative py-6">
+                    <hr class="border-t-[0.2px] border-gray-500">
+                    <img class="rounded-full max-w-[6rem] border-[#1b2555] border-4 absolute -top-4 right-0 mr-5"
+                      src="./assets/images/62143269be5001645490793.jpg" alt="">
+                  </div>
+
+                  <h4 class="font-semibold px-8">Aaron shettinder</h4>
+                  <div class="font-medium text-xl px-8">Verified User</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-[#0E1744] text-white rounded-lg *:my-3 py-8">
+                  <p class=" px-8">  With Vethmine mining Is so easy and simple, I don't even own a computer but am a proud crypto miner today it was possible because of Vethmine all credits goes to them.</p>
+                  <div class="relative py-6">
+                    <hr class="border-t-[0.2px] border-gray-500">
+                    <img class="rounded-full max-w-[6rem] border-[#1b2555] border-4 absolute -top-4 right-0 mr-5" src="./assets/images/6214330c564bc1645490956.jpg" alt="">
+                  </div>
+          
+                  <h4 class="font-semibold px-8">Helen Macron</h4>
+                  <div class="font-medium text-xl px-8">Verified User</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-[#E9A21C] text-white rounded-lg *:my-3 py-8">
+                  <p class=" px-8">
+                    When you think of Fastness, Reliability, security and power Vethmine Is the lead. I have been able to mine and earn Bitcoin, Tron &amp; BNB on my single account.</p>
+                  <div class="relative py-6">
+                    <hr class="border-t-[0.2px] border-gray-500">
+                    <img class="rounded-full max-w-[6rem] border-[#1b2555] border-4 absolute -top-4 right-0 mr-5" src="./assets/images/621433953d7d41645491093.jpg" alt="">
+                  </div>
+          
+                  <h4 class="font-semibold px-8">Stephen Adams</h4>
+                  <div class="font-medium text-xl px-8">Verified User</div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination" id="swiper-pagination1"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" id="swiper-button-prev1"></div>
+            <div class="swiper-button-next" id="swiper-button-next1"></div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="py-20 bg-[#0E1744] mt-10">
+      <div class="container mx-auto max-w-screen-xl sm:flex justify-between items-center">
+        <div class="*:mb-4  text-white">
+          <h2>Ready To Start Your Mining</h2>
+          <p>Join over 40,000 people with the world’s leading mining hashpower provider</p>
+          <hr class="w-[6rem] border-t-[3px] border-yellow-500  ">
+        </div>
+        <a href="https://chat.whatsapp.com/EzT2TTjkOeoK1NMP8Ps8yJ" class="mr-3 ">
+          <button class="py-5 px-8 bg-yellow-600  text-white rounded-md text-xl font-medium  hover:bg-white hover:text-black transition">
+            Start Mining</button>
+        </a>
+      </div>
+    </section>
+
+
+    <section class="py-20 bg-[url('./assets/images/61ac89cf111481638697423.jpg')]  bg-no-repeat bg-cover bg-center">
+      <div class="container mx-auto max-w-screen-xl ">
+        <div class="*:mb-3 ">
+          <h2 class="text-center">Latest Blogs</h2>
+          <p class="text-center">Read our latest blog articles</p>
+          <hr class="w-[6rem] border-t-[3px] border-yellow-500 mx-auto ">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 *:h-fit mt-10 ">
+            <div class="rounded-xl bg-white shadow-lg">
+              <img class="rounded-t-xl" src="./assets/images/thumb_638227cf305581669474255.jpg" alt="">
+              <h4 class="font-semibold px-5 my-3 hover:text-yellow-500 cursor-pointer">10 Basic Things You never Knew About Bitcoin</h4>
+              <p class="px-5 my-5">Bitcoin is the best-known cryptocurrency platform around the world, but there are some things about it you still may not...</p>
+            </div>
+            <div class="rounded-xl bg-white shadow-lg">
+              <img class="rounded-t-xl" src="./assets/images/thumb_6204a5f5c3f901644471797.jpg" alt="">
+              <h4 class="font-semibold px-5 my-3 hover:text-yellow-500 cursor-pointer">Is Bitcoin Mining Legal?</h4>
+              <p class="px-5 my-5">For the most part, yes, bitcoin mining is most likely legal in your jurisdiction. However, there are some places around...</p>
+            </div>
+            <div class="rounded-xl bg-white shadow-lg">
+              <img class="rounded-t-xl" src="./assets/images/thumb_6204a5e8273811644471784.jpg" alt="">
+              <h4 class="font-semibold px-5 my-3 hover:text-yellow-500 cursor-pointer">Is Bitcoin A Good Investment?</h4>
+              <p class="px-5 my-5">Questions about the value of bitcoin as an investment will likely differ depending on who you ask.Those with a vision o...</p>
+            </div>
+            <div class="rounded-xl bg-white shadow-lg">
+              <img class="rounded-t-xl" src="./assets/images/IMG-20240727-WA0000-696x557.jpg" alt="">
+              <h4 class="font-semibold px-5 my-3 hover:text-yellow-500 cursor-pointer">Namya Magazine’s June 2024 Edition: Inspiring Journeys of Triumph and Talent</h4>
+              <p class="px-5 my-5">Our magazine consists of the stories of success through a thorny path. We have on board Nirupama Mohanty,...</p>
+            </div>
+            <div class="rounded-xl bg-white shadow-lg">
+              <img class="rounded-t-xl" src="./assets/images/IMG-20240725-WA0000-696x568.jpg" alt="">
+              <h4 class="font-semibold px-5 my-3 hover:text-yellow-500 cursor-pointer">Aditi Sidhu : From Diary Entries to Literary Milestones and Her Impact as a Namya Magazine Cover Star</h4>
+              <p class="px-5 my-5">Aditi Sidhu: From Diary Entries to Literary Milestones and Her Impact as a Namya Magazine Cover Star</p>
+            </div>
+            <div class="rounded-xl bg-white shadow-lg">
+              <img class="rounded-t-xl" src="./assets/images/IMG_20240211_235640-696x928.jpg" alt="">
+              <h4 class="font-semibold px-5 my-3 hover:text-yellow-500 cursor-pointer">Raj Abhishek Singh – A literary prodigy</h4>
+              <p class="px-5 my-5">Raj Abhishek Singh and his writings stand out for their emotional depth, originality, and powerful exploration of human and societal issues. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </main>
+
+
+
+  <footer class="mt-20" id="footer">
+    <div class="bg-[#0D2558] py-20 border-t-4 border-yellow-500">
+      <div class="container mx-auto max-w-screen-xl">
+
+
+        <div class="grid grid-cols-2 md:grid-cols-6">
+          <div class="*:mb-5">
+            <div class="text-2xl font-semibold text-[#0089FA]">COINApex</div>
+
+            <div class="text-white text-xl hover:underline"><a href="#">Main Page</a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#">Reports & Services </a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#">About & Team</a></div>
+
+          </div>
+          <div class="*:mb-5">
+            <div class="text-2xl font-semibold text-[#0089FA]">RESOURCES</div>
+
+            <div class="text-white text-xl hover:underline"><a href="#">Pricing</a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#">Press Images</a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#">News Blog</a></div>
+
+          </div>
+          <div class="*:mb-5">
+            <div class="text-2xl font-semibold text-[#0089FA]">LEGAL</div>
+
+            <div class="text-white text-xl hover:underline"><a href="#">Terms of Service </a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#">Privacy Policy</a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#">Imprint</a></div>
+
+          </div>
+          <div class="*:mb-5">
+            <div class="text-2xl font-semibold text-[#0089FA]">MOBILE</div>
+
+            <div class="text-white text-xl hover:underline"><a href="#">Mobile App</a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#"></a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#">Mobile View: auto / on / off</a></div>
+
+          </div>
+          <div class="*:mb-5">
+            <div class="text-2xl font-semibold text-[#0089FA]">SUPPORT</div>
+
+            <div class="text-white text-xl hover:underline"><a href="#">Contact & FAQ</a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#">Tax Help</a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#">API</a></div>
+
+          </div>
+          <div class="*:mb-5">
+            <div class="text-2xl font-semibold text-[#0089FA]">SOCIAL</div>
+
+            <div class="text-white text-xl hover:underline"><a href="#">Twitter</a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#">YouTube</a></div>
+
+
+            <div class="text-white text-xl hover:underline"><a href="#">Discord</a></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#081A3F] py-5">
+      <div class="container mx-auto max-w-screen-xl *:py-3">
+        <div class="flex justify-center text-white text-lg">CoinApex has 4.646147111597324 out of 5 stars 11860 Reviews
+          on ProvenExpert.com</div>
+        <div class="flex justify-center text-white text-xl">Made with <span class="text-red-600">❤</span> in Munich ·
+          Copyright © 2012-2024, CoinApex </div>
+      </div>
+    </div>
+
+  </footer>
+  <div id="backtotop"></div>
+
+
+
+
+  <script src="./assets/javascript.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script>
+    var active = '';
+
+  </script>
+</body>
+
+</html>
